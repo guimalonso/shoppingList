@@ -11,7 +11,7 @@ function createListElement() {
 	var li = document.createElement("li");
 	li.addEventListener("click", toggleDone);
 	var button = document.createElement("button");
-	button.innerHTML = "Delete";
+	button.textContent = "Delete";
 	button.addEventListener("click", removeItem);
 	li.appendChild(document.createTextNode(input.value + " "));
 	li.appendChild(button);
